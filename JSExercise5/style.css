@@ -1,0 +1,104 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+
+  --light-color: #FFFF;
+  --dark-color: hsla(240, 6%, 21%, 1);
+  --card-ns-color: 
+  #E1E1E6;  
+  --card-s-color: #02799D;
+}
+
+.mode .on{
+  position: fixed;
+  top: 4.4rem;
+  right: 4.4rem;
+}
+
+.mode .off{
+  position: fixed;
+  bottom: 4.4rem;
+  right: 4.4rem;
+  opacity: 0;
+}
+
+.chosen #outside{
+  fill: var(--card-s-color);
+}
+
+.chosen svg {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+}
+ 
+.chosen #inside{
+  fill: var(--light-color);
+}
+
+.background{
+  font-family: 'Roboto', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.light {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.dark {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.off{
+  fill: #C4C4CC;
+}
+
+.outsideOff{
+  fill: #29292E;
+}
+
+.insideOff{
+  fill: #C4C4CC;
+}
+
+.musics{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:3.2rem;
+  margin-left: 13.2rem;
+}
+
+.clock{
+  font-style: Medium;
+  font-size: 12.617rem;
+  line-height: 14.8rem;
+
+  /* Tira o espaço entre os itens */
+  display: flex;
+}
+
+.controls{
+  display: flex;
+  justify-content: center;
+  gap: 4.0rem;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+
+
